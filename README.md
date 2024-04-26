@@ -27,12 +27,22 @@
 
 2. 运行容器：
    ```bash
-   docker run -p 8080:5000 ddddocr
+   docker run -p 10049:5000 ddddocr
    ```
 
 ### 调用Web接口
 
-向`http://localhost:8080/recognize`发送POST请求，附带图片数据，即可进行验证码识别。
+您可以使用以下`curl`命令从命令行发送POST请求，附带一个验证码图片：
+
+```bash
+curl --location --request POST 'http://localhost:10049/ocr_url' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "image_url": "https://img.xwyue.com/i/2024/04/26/662b805c43cd7.png"
+}'
+```
+
+确保将 `http://localhost:10049/ocr_url` 替换为您的服务器地址及端口，并且将 `"image_url"` 的值替换为您的图片的URL。
 
 ## 贡献
 
@@ -45,4 +55,3 @@
 ## 致谢
 
 特此感谢原项目的作者，本项目在原有基础上进行了增强以更好地服务于社区。
-```
