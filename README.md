@@ -54,4 +54,4 @@ curl --location --request POST 'http://localhost:10049/ocr_url' \
 
 ## 致谢
 
-特此感谢原项目的作者，本项目在原有基础上进行了增强以更好地服务于社区。
+特此感谢原项目[ddddocr](https://github.com/sml2h3/ddddocr)，本项目在原有基础上进行了增强以更好地服务于社区。
