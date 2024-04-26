@@ -1,4 +1,3 @@
-```markdown
 # ddddocr Docker版本
 
 ## 介绍
