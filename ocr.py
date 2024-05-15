@@ -3,6 +3,7 @@ import requests
 import ddddocr
 import base64
 import logging
+from typing import Union
 
 app = Flask(__name__)
 ocr = ddddocr.DdddOcr(beta=True)
